@@ -66,7 +66,7 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 	if (node1)
 	{
 		while (node1->next)
-			node = node1->next;
+			node1 = node1->next;
 		node1->next = new_node0;
 	}
 	else

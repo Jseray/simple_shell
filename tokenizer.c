@@ -33,7 +33,7 @@ char **strtow(char *str, char *d)
 		while (!is_delim(str[a + l], d) && str[a + l])
 			l++;
 		v[k] = malloc((l + 1) * sizeof(char));
-		if (!s[k])
+		if (!v[k])
 		{
 			for (l = 0; l < k; l++)
 				free(v[l]);

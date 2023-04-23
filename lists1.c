@@ -38,16 +38,16 @@ char **list_to_strings(list_t *head)
 		return (NULL);
 	for (a = 0; node1; node1 = node1->next, a++)
 	{
-		strr = malloc(_strlen(node1->strr) + 1);
+		strr = malloc(_strlen(node1->str) + 1);
 		if (!strr)
 		{
-			for (k = 0; k < a; jk++)
+			for (k = 0; k < a; k++)
 				free(strs1[k]);
 			free(strs1);
 			return (NULL);
 		}
 
-		strr = _strcpy(strr, node1->strr);
+		strr = _strcpy(strr, node1->str);
 		strs1[a] = strr;
 	}
 	strs1[a] = NULL;
